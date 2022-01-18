@@ -14,9 +14,9 @@ export const initialState = {
 export const birds = [
   {
     id: randomID(6),
-    title: 'Rainbow Parrot',
+    title: 'Parus major',
     price: 10,
-    image: 'https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    image: 'https://images.pexels.com/photos/10662609/pexels-photo-10662609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
     id: randomID(6),
@@ -45,10 +45,52 @@ export const birds = [
   },
   {
     id: randomID(6),
-    title: 'Cyanistes caeruleus',
+    title: 'Hummingbird',
     price: 4,
-    image: 'https://media.istockphoto.com/photos/blue-tit-on-a-branch-picture-id466831492?k=20&m=466831492&s=612x612&w=0&h=CtpJoN2gJDYKofU37IyudXEXHXTNr3T0WQmZka8rXvQ=',
+    image: 'https://images.pexels.com/photos/349758/hummingbird-bird-birds-349758.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
   },
+  {
+    id: randomID(6),
+    title: 'Erithacus rubecula',
+    price: 4,
+    image: 'https://images.pexels.com/photos/46166/robin-european-robin-erithacus-rubecula-red-46166.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
+  {
+    id: randomID(6),
+    title: 'Lark',
+    price: 5,
+    image: 'https://images.pexels.com/photos/5964998/pexels-photo-5964998.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: randomID(6),
+    title: 'Upupa epops',
+    price: 5,
+    image: 'https://images.pexels.com/photos/7338385/pexels-photo-7338385.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
+  {
+    id: randomID(6),
+    title: 'Pyrrhula pyrrhula',
+    price: 5,
+    image: 'https://images.pexels.com/photos/10603665/pexels-photo-10603665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+  },
+  {
+    id: randomID(6),
+    title: 'Coracias garrulus',
+    price: 5,
+    image: 'https://images.pexels.com/photos/6057343/pexels-photo-6057343.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
+  {
+    id: randomID(6),
+    title: 'Lorem',
+    price: 4,
+    image: 'https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+  },
+  
+  
+  
+  
+  
+
 
 
 

@@ -1,25 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+import { Link } from 'react-router-dom';
 
-import clsx from 'clsx';
+
 
 // import { connect } from 'react-redux';
 // import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
 
 import styles from './Homepage.module.scss';
 
-const Component = ({className, children}) => (
-  <div className={clsx(className, styles.root)}>
-    <h2>Homepage</h2>
-    <AppBar className='app'>
-      <Toolbar>
-        news
-      </Toolbar>
-
-    </AppBar>
-    {children}
+const Component = ({className}) => (
+  <div className={styles.root}>
+    <Link to='/produtcs' ><h1>Hunt for beauty</h1></Link>
+    <h3>Embrace ungraspable imponderables of pure nature, without violence </h3>
   </div>
 );
 

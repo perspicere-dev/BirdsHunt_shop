@@ -1,0 +1,83 @@
+@import '../../../styles/settings.scss';
+
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: $color-font;
+    color: white;
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: $color-hover;
+  }
+  
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.2rem;
+  }
+  
+  .badge {
+    background-color: $color-basket;
+    padding: 0.2rem 1rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
+    background-color: $color-basket;
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 767px) {
+      .button{
+          padding: 7px;
+          width: 0px;
+          background-color: transparent;
+      
+      }
+      span {
+          display: none;
+      }
+
+      .icon {
+          display: inline;
+      }
+
+      .badge {
+          display: inline;
+      }
+
+  }
+

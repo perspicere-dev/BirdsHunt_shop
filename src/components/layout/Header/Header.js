@@ -1,23 +1,34 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { Fragment } from 'react';
+import styles from './Header.module.scss';
+import HeaderCartButton from '../../features/HeaderCartButton/HeaderCartButton';
+import { Link } from 'react-router-dom'; 
+import { faFeather } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import clsx from 'clsx';
+
+
+
 
 // import { connect } from 'react-redux';
 // import { reduxSelector, reduxActionCreator } from '../../../redux/exampleRedux.js';
 
-import styles from './Header.module.scss';
 
-const Component = ({className, children}) => (
-  <div className={clsx(className, styles.root)}>
-    <h2>Header</h2>
-    {children}
-  </div>
-);
-
-Component.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
+const Component = (props) => {
+  return (
+    <Fragment>
+      <header className={styles.header}>
+        <Link to='/produtcs' className={styles.title}>BirdsHunt</Link>
+        <Link to='/'>
+          <FontAwesomeIcon className={styles.icon}size='xl' icon={faFeather} />
+        </Link>
+        <HeaderCartButton />
+      </header>
+      
+      
+    </Fragment>
+  );
 };
 
 // const mapStateToProps = state => ({

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { birds } from '../../../redux/initialState';
 import { Card } from '../../features/Card/Card';
 import styles from './ProdutcsList.module.scss';
@@ -13,14 +14,22 @@ import styles from './ProdutcsList.module.scss';
 // import styles from './ProdutcsList.module.scss';;
 
 const Component = ({ className, children }) => {
- 
+
   return (
     <div>
-      <h1>Birds</h1>
       <div className={styles.container}>
+       
         {birds.map(bird => (
-          <Card key={bird.id} src={bird.image} title={bird.title}/>
+          <Link key={bird.id} to={`/product/${bird.title}`}>
+            <Card 
+              key={bird.title} 
+              src={bird.image} 
+              title={bird.title} 
+              id={bird.id} 
+              price={bird.price}/>
+          </Link>
         ))}
+       
       </div>
     </div>
    

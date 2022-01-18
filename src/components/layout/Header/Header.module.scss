@@ -1,4 +1,54 @@
 @import '../../../styles/settings.scss';
 
-// .root {
-// }
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: $background-color;
+    color: $color-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
+
+  a {
+    color: $color-font;
+    text-decoration: none;
+    font-weight: 200;
+    transition: $transition;
+    font-size: $base-size;
+    &:hover {
+      color: $color-hover;
+    }
+    &:global(.active) {
+      color: $color-theme;
+    }
+  }
+
+  .icon{
+      font-size: 2rem;
+  }
+
+  @media (max-width: 767px) {
+      .icon {
+          font-size: 1.5rem;
+      }
+
+    //   a:nth-child() {
+    //       display: none;
+    //   }
+
+      .title {
+          display: none;
+      }
+
+
+  }
+
+
+  
